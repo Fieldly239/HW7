@@ -1,0 +1,46 @@
+﻿@page "/feedbackes"
+@inject IFeedBackService FeedBackService
+@inject NavigationManager NavigationManager
+
+<PageTitle>FeedBackes</PageTitle>
+<h3>FeedBackes</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Appilcation Name</th>
+            <th>Description</th>
+            <th>Vote</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var back in FeedBackService.Backes)
+        {
+            <tr>
+                <td>@back.AppilcationName</td>
+                <td>@back.Description</td>
+                <td>@back.Vote.Name</td>
+                <td>
+                    <button class="btn btn-primary" @onclick="(() => ShowBack(back.Id))"><i class="oi oi-pencil"></i></button>
+                </td>                
+            </tr>
+        }
+    </tbody>
+</table>
+<button class="btn btn-primary" @onclick="CreateNewFeedBack">Create New FeedBack</button>
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        await FeedBackService.GetFeedBackes();
+    }
+    void ShowBack(int id)
+    {
+        NavigationManager.NavigateTo($"back/{id}");
+    }
+    void CreateNewFeedBack()
+    {
+        NavigationManager.NavigateTo("/back");
+    }
+}
