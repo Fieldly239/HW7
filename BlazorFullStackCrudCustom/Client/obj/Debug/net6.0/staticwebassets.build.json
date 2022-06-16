@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tjvVIL6g7nhkzdvf8HOtJAePy67lemzmtqklu5jsIXs=",
+  "Hash": "EDMBJjDoHoR9gVHDjmBjCBjWLJErp8EGRv7Akub3nx4=",
   "Source": "BlazorFullStackCrudCustom.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -32,23 +32,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net6.0\\blazor.boot.json"
-    },
-    {
-      "Identity": "D:\\HW7\\BlazorFullStackCrudCustom\\BlazorFullStackCrudCustom\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.webassembly.js",
-      "SourceId": "BlazorFullStackCrudCustom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\HW7\\BlazorFullStackCrudCustom\\BlazorFullStackCrudCustom\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/blazor.webassembly.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "boot",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Users\\cf303957\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\6.0.5\\build\\net6.0\\blazor.webassembly.js"
     },
     {
       "Identity": "D:\\HW7\\BlazorFullStackCrudCustom\\BlazorFullStackCrudCustom\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\BlazorFullStackCrudCustom.Client.dll",
@@ -119,6 +102,23 @@
       "OriginalItemSpec": "D:\\HW7\\BlazorFullStackCrudCustom\\BlazorFullStackCrudCustom\\Shared\\bin\\Debug\\net6.0\\BlazorFullStackCrudCustom.Shared.pdb"
     },
     {
+      "Identity": "D:\\HW7\\BlazorFullStackCrudCustom\\BlazorFullStackCrudCustom\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "SourceId": "BlazorFullStackCrudCustom.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\HW7\\BlazorFullStackCrudCustom\\BlazorFullStackCrudCustom\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/blazor.webassembly.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "boot",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\Users\\cf303957\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\6.0.5\\build\\net6.0\\blazor.webassembly.js"
+    },
+    {
       "Identity": "D:\\HW7\\BlazorFullStackCrudCustom\\BlazorFullStackCrudCustom\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\dotnet.6.0.5.o3dmkfzgs9.js",
       "SourceId": "BlazorFullStackCrudCustom.Client",
       "SourceType": "Computed",
@@ -170,23 +170,6 @@
       "OriginalItemSpec": "D:\\Users\\cf303957\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.5\\runtimes\\browser-wasm\\native\\dotnet.wasm"
     },
     {
-      "Identity": "D:\\HW7\\BlazorFullStackCrudCustom\\BlazorFullStackCrudCustom\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt.dat",
-      "SourceId": "BlazorFullStackCrudCustom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\HW7\\BlazorFullStackCrudCustom\\BlazorFullStackCrudCustom\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/icudt.dat",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "native",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\Users\\cf303957\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.5\\runtimes\\browser-wasm\\native\\icudt.dat"
-    },
-    {
       "Identity": "D:\\HW7\\BlazorFullStackCrudCustom\\BlazorFullStackCrudCustom\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt_CJK.dat",
       "SourceId": "BlazorFullStackCrudCustom.Client",
       "SourceType": "Computed",
@@ -202,6 +185,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Users\\cf303957\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.5\\runtimes\\browser-wasm\\native\\icudt_CJK.dat"
+    },
+    {
+      "Identity": "D:\\HW7\\BlazorFullStackCrudCustom\\BlazorFullStackCrudCustom\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt.dat",
+      "SourceId": "BlazorFullStackCrudCustom.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\HW7\\BlazorFullStackCrudCustom\\BlazorFullStackCrudCustom\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/icudt.dat",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "native",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Users\\cf303957\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.5\\runtimes\\browser-wasm\\native\\icudt.dat"
     },
     {
       "Identity": "D:\\HW7\\BlazorFullStackCrudCustom\\BlazorFullStackCrudCustom\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt_EFIGS.dat",
@@ -289,23 +289,6 @@
       "OriginalItemSpec": "D:\\Users\\cf303957\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\6.0.5\\lib\\net6.0\\Microsoft.AspNetCore.Components.Forms.dll"
     },
     {
-      "Identity": "D:\\HW7\\BlazorFullStackCrudCustom\\BlazorFullStackCrudCustom\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll",
-      "SourceId": "BlazorFullStackCrudCustom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\HW7\\BlazorFullStackCrudCustom\\BlazorFullStackCrudCustom\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Web.dll",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "runtime",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\Users\\cf303957\\.nuget\\packages\\microsoft.aspnetcore.components.web\\6.0.5\\lib\\net6.0\\Microsoft.AspNetCore.Components.Web.dll"
-    },
-    {
       "Identity": "D:\\HW7\\BlazorFullStackCrudCustom\\BlazorFullStackCrudCustom\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.dll",
       "SourceId": "BlazorFullStackCrudCustom.Client",
       "SourceType": "Computed",
@@ -321,6 +304,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Users\\cf303957\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\6.0.5\\lib\\net6.0\\Microsoft.AspNetCore.Components.WebAssembly.dll"
+    },
+    {
+      "Identity": "D:\\HW7\\BlazorFullStackCrudCustom\\BlazorFullStackCrudCustom\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll",
+      "SourceId": "BlazorFullStackCrudCustom.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\HW7\\BlazorFullStackCrudCustom\\BlazorFullStackCrudCustom\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Web.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Users\\cf303957\\.nuget\\packages\\microsoft.aspnetcore.components.web\\6.0.5\\lib\\net6.0\\Microsoft.AspNetCore.Components.Web.dll"
     },
     {
       "Identity": "D:\\HW7\\BlazorFullStackCrudCustom\\BlazorFullStackCrudCustom\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",

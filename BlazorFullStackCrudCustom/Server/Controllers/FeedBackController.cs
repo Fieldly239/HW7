@@ -45,6 +45,7 @@ namespace BlazorFullStackCrudCustom.Server.Controllers
         public async Task<ActionResult<List<FeedBack>>> CreateFeedBack(FeedBack back)
         {
             back.Vote = null;
+            back.Appilcation = null;
             _context.FeedBackes.Add(back);
             await _context.SaveChangesAsync();
             return Ok(await GetDbBackes());
@@ -58,7 +59,7 @@ namespace BlazorFullStackCrudCustom.Server.Controllers
                 .FirstOrDefaultAsync(sh => sh.Id == id);
             if (dbBack == null)
                 return NotFound("Sorry, but no feedback for you. :/");
-            dbBack.AppilcationName = back.AppilcationName;
+            dbBack.AppilcationId = back.AppilcationId;
             dbBack.Description = back.Description;
             dbBack.VoteId = back.VoteId;
 

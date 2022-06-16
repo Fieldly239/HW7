@@ -27,7 +27,6 @@
                 new FeedBack
                 {
                     Id = 1,
-                    AppilcationName = "Smart Care",
                     Description = "Error 404",
                     
                     VoteId = 1,
@@ -36,7 +35,6 @@
                 new FeedBack
                 {
                     Id = 2,
-                    AppilcationName = "Chat Bot",
                     Description = "Error 405",
                 
                     VoteId = 2,
