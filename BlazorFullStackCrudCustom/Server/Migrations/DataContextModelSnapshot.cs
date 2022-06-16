@@ -21,6 +21,41 @@ namespace BlazorFullStackCrudCustom.Server.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("BlazorFullStackCrudCustom.Shared.Appilcation", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Appilcations");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Description = "",
+                            Name = "Smart Care"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Description = "",
+                            Name = "IT Asset Manager"
+                        });
+                });
+
             modelBuilder.Entity("BlazorFullStackCrudCustom.Shared.FeedBack", b =>
                 {
                     b.Property<int>("Id")
@@ -28,6 +63,9 @@ namespace BlazorFullStackCrudCustom.Server.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("AppilcationId")
+                        .HasColumnType("int");
 
                     b.Property<string>("AppilcationName")
                         .IsRequired()
@@ -42,6 +80,8 @@ namespace BlazorFullStackCrudCustom.Server.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("AppilcationId");
+
                     b.HasIndex("VoteId");
 
                     b.ToTable("FeedBackes");
@@ -50,6 +90,7 @@ namespace BlazorFullStackCrudCustom.Server.Migrations
                         new
                         {
                             Id = 1,
+                            AppilcationId = 1,
                             AppilcationName = "Smart Care",
                             Description = "Error 404",
                             VoteId = 1
@@ -57,6 +98,7 @@ namespace BlazorFullStackCrudCustom.Server.Migrations
                         new
                         {
                             Id = 2,
+                            AppilcationId = 2,
                             AppilcationName = "Chat Bot",
                             Description = "Error 405",
                             VoteId = 2
@@ -109,11 +151,19 @@ namespace BlazorFullStackCrudCustom.Server.Migrations
 
             modelBuilder.Entity("BlazorFullStackCrudCustom.Shared.FeedBack", b =>
                 {
+                    b.HasOne("BlazorFullStackCrudCustom.Shared.Appilcation", "Appilcation")
+                        .WithMany()
+                        .HasForeignKey("AppilcationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("BlazorFullStackCrudCustom.Shared.Vote", "Vote")
                         .WithMany()
                         .HasForeignKey("VoteId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Appilcation");
 
                     b.Navigation("Vote");
                 });

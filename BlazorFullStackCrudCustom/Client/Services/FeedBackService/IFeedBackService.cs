@@ -4,6 +4,8 @@
     {
         List<FeedBack> Backes { get; set; }
         List<Vote> Votes { get; set; }
+        List<Appilcation> Appilcations { get; set; }
+        Task GetAppilcations();
         Task GetVotes();
         Task GetFeedBackes();
         Task<FeedBack> GetSingleBack(int id);

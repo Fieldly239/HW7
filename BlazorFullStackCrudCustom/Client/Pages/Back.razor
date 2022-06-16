@@ -13,8 +13,13 @@ else
 }
 <EditForm Model="back" OnSubmit="HandleSubmit">
     <div>
-        <label for="appilcationname">Appilcation Name</label>
-        <InputText id="appilcationname" @bind-Value="back.AppilcationName" class="form-control"></InputText>
+        <label>Appilcation</label><br />
+        <InputSelect @bind-Value="back.AppilcationId" class="form-select">
+            @foreach (var apps in FeedBackService.Appilcations)
+            {
+                <option value="@apps.Id">@apps.Name</option>
+            }
+        </InputSelect>
     </div>
     <div>
         <label for="description">Description</label>
@@ -46,6 +51,7 @@ else
     {
         btnText = Id == null ? "Save New FeedBack" : "Update FeedBack";
         await FeedBackService.GetVotes();
+        await FeedBackService.GetAppilcations();
     }
 
     protected override async Task OnParametersSetAsync()

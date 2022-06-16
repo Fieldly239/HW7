@@ -13,5 +13,8 @@ namespace BlazorFullStackCrudCustom.Shared
         public string Description { get; set; } = string.Empty;
         public Vote? Vote { get; set; }
         public int VoteId { get; set; }
+        public Appilcation? Appilcation { get; set; }
+        public int AppilcationId { get; set; }
+
     }
 }

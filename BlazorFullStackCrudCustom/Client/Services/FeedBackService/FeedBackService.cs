@@ -15,12 +15,20 @@ namespace BlazorFullStackCrudCustom.Client.Services.FeedBackService
         }
         public List<FeedBack> Backes { get; set; } = new List<FeedBack>();
         public List<Vote> Votes { get; set; } = new List<Vote>();
+        public List<Appilcation> Appilcations { get; set; } = new List<Appilcation>();
 
         public async Task GetVotes()
         {
             var result = await _http.GetFromJsonAsync<List<Vote>>("api/feedback/votes");
             if (result != null)
                 Votes = result;
+        }
+
+        public async Task GetAppilcations()
+        {
+            var result = await _http.GetFromJsonAsync<List<Appilcation>>("api/appilcations");
+            if (result != null)
+                Appilcations = result;
         }
 
         public async Task<FeedBack> GetSingleBack(int id)
