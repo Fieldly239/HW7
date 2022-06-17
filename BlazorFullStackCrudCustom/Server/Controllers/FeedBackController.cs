@@ -17,7 +17,7 @@ namespace BlazorFullStackCrudCustom.Server.Controllers
         [HttpGet]
         public async Task<ActionResult<List<FeedBack>>> GetFeedBackes()
         {
-            var backes = await _context.FeedBackes.Include(sh => sh.Vote).ToListAsync();
+            var backes = await _context.FeedBackes.Include(sh => sh.Vote).Include(sh => sh.Appilcation).ToListAsync();
             return Ok(backes);
         }
 
@@ -33,6 +33,7 @@ namespace BlazorFullStackCrudCustom.Server.Controllers
         {
             var back = await _context.FeedBackes
                 .Include(h => h.Vote)
+                .Include(h => h.Appilcation)
                 .FirstOrDefaultAsync(h => h.Id == id);
             if (back == null)
             {
