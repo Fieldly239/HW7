@@ -1,0 +1,12 @@
+D:\HW7\BlazorFullStackCrudCustom\BlazorFullStackCrudCustom\Shared\bin\Release\net6.0\BlazorFullStackCrudCustom.Shared.deps.json
+D:\HW7\BlazorFullStackCrudCustom\BlazorFullStackCrudCustom\Shared\bin\Release\net6.0\BlazorFullStackCrudCustom.Shared.dll
+D:\HW7\BlazorFullStackCrudCustom\BlazorFullStackCrudCustom\Shared\bin\Release\net6.0\BlazorFullStackCrudCustom.Shared.pdb
+D:\HW7\BlazorFullStackCrudCustom\BlazorFullStackCrudCustom\Shared\obj\Release\net6.0\BlazorFullStackCrudCustom.Shared.csproj.AssemblyReference.cache
+D:\HW7\BlazorFullStackCrudCustom\BlazorFullStackCrudCustom\Shared\obj\Release\net6.0\BlazorFullStackCrudCustom.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\HW7\BlazorFullStackCrudCustom\BlazorFullStackCrudCustom\Shared\obj\Release\net6.0\BlazorFullStackCrudCustom.Shared.AssemblyInfoInputs.cache
+D:\HW7\BlazorFullStackCrudCustom\BlazorFullStackCrudCustom\Shared\obj\Release\net6.0\BlazorFullStackCrudCustom.Shared.AssemblyInfo.cs
+D:\HW7\BlazorFullStackCrudCustom\BlazorFullStackCrudCustom\Shared\obj\Release\net6.0\BlazorFullStackCrudCustom.Shared.csproj.CoreCompileInputs.cache
+D:\HW7\BlazorFullStackCrudCustom\BlazorFullStackCrudCustom\Shared\obj\Release\net6.0\BlazorFullStackCrudCustom.Shared.dll
+D:\HW7\BlazorFullStackCrudCustom\BlazorFullStackCrudCustom\Shared\obj\Release\net6.0\refint\BlazorFullStackCrudCustom.Shared.dll
+D:\HW7\BlazorFullStackCrudCustom\BlazorFullStackCrudCustom\Shared\obj\Release\net6.0\BlazorFullStackCrudCustom.Shared.pdb
+D:\HW7\BlazorFullStackCrudCustom\BlazorFullStackCrudCustom\Shared\obj\Release\net6.0\ref\BlazorFullStackCrudCustom.Shared.dll
