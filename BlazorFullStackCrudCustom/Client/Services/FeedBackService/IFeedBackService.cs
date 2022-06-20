@@ -12,5 +12,9 @@
         Task CreateFeedBack (FeedBack back);
         Task UpdateFeedBack (FeedBack back);
         Task DeleteFeedBack(int id);
+        Task<Appilcation> GetSingleApps(int id);
+        Task CreateApps(Appilcation apps);
+        Task UpdateApps(Appilcation apps);
+        Task DeleteApps(int id);
     }
 }

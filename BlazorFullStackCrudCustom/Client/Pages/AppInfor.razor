@@ -1,0 +1,45 @@
+﻿@page "/appilcations"
+@inject IFeedBackService FeedBackService
+@inject NavigationManager NavigationManager
+
+<PageTitle>Appilcation</PageTitle>
+<h3>Appilcation</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Appilcation Id</th>
+            <th>Appilcation Name</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var app in FeedBackService.Appilcations)
+        {
+            <tr>
+                <td>@app.Id</td>
+                <td>@app.Name</td>
+                
+                <td>
+                    <button class="btn btn-primary" @onclick="(() => ShowApps(app.Id))"><i class="oi oi-pencil"></i></button>
+                </td>                
+            </tr>
+        }
+    </tbody>
+</table>
+<button class="btn btn-primary" @onclick="CreateNewAppilcation">Create New Appilcation</button>
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        await FeedBackService.GetAppilcations();
+    }
+    void ShowApps(int id)
+    {
+        NavigationManager.NavigateTo($"apps/{id}");
+    }
+    void CreateNewAppilcation()
+    {
+        NavigationManager.NavigateTo("/apps");
+    }
+}

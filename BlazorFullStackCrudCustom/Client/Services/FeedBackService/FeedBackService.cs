@@ -71,5 +71,37 @@ namespace BlazorFullStackCrudCustom.Client.Services.FeedBackService
             var result = await _http.DeleteAsync($"api/feedback/{id}");
             await SetBackes(result);
         }
+
+        public async Task<Appilcation> GetSingleApps(int id)
+        {
+            var result = await _http.GetFromJsonAsync<Appilcation>($"api/appilcations/{id}");
+            if (result != null)
+                return result;
+            throw new Exception("FeedBack not found!");
+        }
+
+        public async Task CreateApps(Appilcation apps)
+        {
+            var result = await _http.PostAsJsonAsync("api/appilcations", apps);
+            await SetApps(result);
+        }
+
+        public async Task UpdateApps(Appilcation apps)
+        {
+            var result = await _http.PutAsJsonAsync($"api/appilcations/{apps.Id}", apps);
+            await SetApps(result);
+        }
+
+        public async Task DeleteApps(int id)
+        {
+            var result = await _http.DeleteAsync($"api/appilcations/{id}");
+            await SetApps(result);
+        }
+        private async Task SetApps(HttpResponseMessage result)
+        {
+            var response = await result.Content.ReadFromJsonAsync<List<Appilcation>>();
+            Appilcations = response;
+            _navigationManager.NavigateTo("appilcations");
+        }
     }
 }

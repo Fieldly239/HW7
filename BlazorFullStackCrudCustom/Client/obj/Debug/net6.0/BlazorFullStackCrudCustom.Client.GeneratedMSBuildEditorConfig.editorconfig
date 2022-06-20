@@ -22,6 +22,14 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/HW7/BlazorFullStackCrudCustom/BlazorFullStackCrudCustom/Client/Pages/AppEdit.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwRWRpdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HW7/BlazorFullStackCrudCustom/BlazorFullStackCrudCustom/Client/Pages/AppInfor.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwSW5mb3IucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/HW7/BlazorFullStackCrudCustom/BlazorFullStackCrudCustom/Client/Pages/Back.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmFjay5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
